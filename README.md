@@ -1,17 +1,17 @@
 
- European Covid-19 Monitor
+ #European Covid-19 Monitor
       
  This non-profit web application is developed for informational
  purposes,it works just as a monitor of Covid-19 situation around the
  countries of Europe. Those data can find useful for the analysis of
  the pandemy or just to keep people informed about real-time
  statistics. 
- informations Provided by
+ ##informations Provided by
           
- COVID-19 data API from https://rapidapi.com/user/Gramzivi
+ COVID-19 data API from **https://rapidapi.com/user/Gramzivi
             
           
-COVID-19 data Overview
+##COVID-19 data Overview
           
 We collect information from several reliable sources, like Johns
 Hopkins CSSE, CDC, WHO and a few others. All our sources are
