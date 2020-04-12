@@ -33,6 +33,7 @@ class Heading extends Component {
             money we get goes for better servers, data providers and other
             expenses for providing you with a better, faster and more reliable
             API. Stay safe.
+            
           </p>
         </article>
       </div>
