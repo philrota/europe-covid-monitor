@@ -25,5 +25,8 @@ road map. This is a non-profit humanitarian project, and all the
 money we get goes for better servers, data providers and other
 expenses for providing you with a better, faster and more reliable
 API. Stay safe.
+
+##Note:
+Remember to uncomment the fetch method to get the api.
             
        
