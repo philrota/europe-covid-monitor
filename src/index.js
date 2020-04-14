@@ -1,14 +1,20 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import MainData from "./App";
-import Heading from "./components/Heading"
+import App from "./App";
+import Heading from "./components/Heading";
+import Chart from "./components/Chart";
+import ChartHead from "./components/ChartHead";
 import * as serviceWorker from "./serviceWorker";
 
 ReactDOM.render(
   <React.StrictMode>
     <Heading />
-    <MainData />
+    <App />
+    <ChartHead />
+    <div id="chart">
+      <Chart />
+    </div>
   </React.StrictMode>,
   document.getElementById("root")
 );

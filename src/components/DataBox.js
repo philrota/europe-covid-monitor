@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import { CircularProgress } from "@material-ui/core";
+
 class DataBox extends Component {
   state = {
     country: this.props.country,
@@ -8,7 +10,6 @@ class DataBox extends Component {
     deaths: null,
     loading: false,
   };
-
   componentDidMount() {
     const proxy = "https://cors-anywhere.herokuapp.com/";
     this.setState({ loading: true });
@@ -32,8 +33,7 @@ class DataBox extends Component {
       })
       .then((data) => {
         this.setState({ loading: false });
-        console.log(data);
-        console.log(data[0].country); // get country, you can switch to confirmed or recovered etc..
+        // get country, you can switch to confirmed or recovered etc..
         this.setState({
           confirmed: data[0].confirmed,
           recovered: data[0].recovered,
@@ -43,12 +43,14 @@ class DataBox extends Component {
       })
       .catch((err) => {
         console.log(err);
-      });*/
+      });
   }
 
   render() {
+    const { loading } = this.state;
+
     return (
-      <div className="box">
+      <main className="box">
         <ul>
           <li>
             <img src={this.props.flag} alt="flag"></img> <b>Country:</b>{" "}
@@ -66,10 +68,11 @@ class DataBox extends Component {
           <li style={{ color: "red" }}>
             <b>Deaths:</b> {this.state.deaths} <br />
           </li>
-          <p id="state"></p>
+          {loading ? <CircularProgress /> : null}
         </ul>
-      </div>
+      </main>
     );
   }
 }
+
 export default DataBox;
