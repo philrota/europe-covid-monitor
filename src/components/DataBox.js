@@ -14,7 +14,7 @@ class DataBox extends Component {
     const proxy = "https://cors-anywhere.herokuapp.com/";
     this.setState({ loading: true });
 
-    /*fetch(
+    fetch(
       `https://covid-19-data.p.rapidapi.com/country?format=undefined&name=${this.state.country}`,
       {
         method: "GET",
