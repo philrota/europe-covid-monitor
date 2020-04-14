@@ -9,7 +9,7 @@
  ![Project](https://i.imgur.com/Ss1WG5h.jpg) 
  ## Informations Provided by
           
- COVID-19 data API from **https://rapidapi.com/user/Gramzivi
+ COVID-19 data API from ** https://rapidapi.com/user/Gramzivi
             
         
 ## COVID-19 data Overview
