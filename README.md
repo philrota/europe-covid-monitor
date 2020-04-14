@@ -5,7 +5,7 @@
  purposes,it works just as a monitor of Covid-19 situation around the
  countries of Europe. Those data can find useful for the analysis of
  the pandemy or just to keep people informed about real-time
- statistics. 
+ statistics. Also features a canvas js data chart representing the progression by month ,in Europe.
  ![Project](https://i.imgur.com/Ss1WG5h.jpg) 
  ## Informations Provided by
           
