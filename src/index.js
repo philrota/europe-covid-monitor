@@ -15,11 +15,13 @@ ReactDOM.render(
     <div id="chart">
       <Chart />
     </div>
+    <footer>
+      Created by Philippe Rota, data provided by <a href="https://rapidapi.com/user/Gramzivi" target="_blank"> Gramzivi. </a><br />
+       <b>Contacts:</b> philippe.rota@outlook.it  <br /><b> Website:</b> <a href="https://philippe-rota.it">Philippe-Rota.it</a>
+    </footer>
   </React.StrictMode>,
   document.getElementById("root")
 );
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
+
 serviceWorker.unregister();

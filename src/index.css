@@ -13,7 +13,7 @@ body {
     #53aced,
     #7dc6f4
   );
-  font-family: "Cabin", sans-serif;
+  font-family: "Work Sans", sans-serif;
 }
 
 code {
@@ -77,11 +77,19 @@ section {
   margin-top: 20px;
   margin-bottom: 10px;
 }
+footer {background-color: white;
+  opacity: 0.75;
+  width: 90%;
+  margin: auto;
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 30px;
+margin-bottom: 10px;}
 @media (max-width: 1024px) {
   .grid-container {
     grid-template-columns: unset;
   }
-  section{
+  section,footer{
     width: 80%;
   }
 }
