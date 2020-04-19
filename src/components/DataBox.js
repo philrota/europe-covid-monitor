@@ -23,7 +23,7 @@ class DataBox extends Component {
         headers: {
           "x-rapidapi-host": "covid-19-data.p.rapidapi.com",
           "x-rapidapi-key":
-            "9b08cf8676msh77975a36d604f1fp1a0e5ajsn93480bea412f",
+            //get an api key at rapidAPI covid-19 data,
           "Access-Control-Allow-Origin": "*",
         },
       }
