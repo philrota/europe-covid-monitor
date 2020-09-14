@@ -1,8 +1,13 @@
 [
   [
     {
-      "totalCases": 465847,
+      "totalCases":727045 ,
       "month": "April",
+      "year": 2020
+    },
+    {
+      "totalCases":283506 ,
+      "month": "May",
       "year": 2020
     }
   ]

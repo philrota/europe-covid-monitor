@@ -6,7 +6,7 @@ const CanvasJSChart = CanvasJSReact.CanvasJSChart;
 class Chart extends Component {
   state = {
     april: datas[0][0].totalCases,
-    may: null,
+    may: datas[0][1].totalCases,
     june: null,
     july: null,
     august: null,
@@ -25,13 +25,13 @@ render() {
       data: [
         {
           // Change type to "doughnut", "line", "splineArea", etc.
-          type: "column",
+          type: "splineArea",
           dataPoints: [
             {
               label: " April 2020",
               y: this.state.april,
             },
-            { label: `May 2020`, y: null },
+            { label: `May 2020`, y: this.state.may },
             { label: `June 2020`, y: null },
             { label: `July 2020`, y: null },
             { label: `August 2020`, y: null },

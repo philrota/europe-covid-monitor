@@ -24,3 +24,4 @@ yarn-error.log*
 .firebase/hosting.YnVpbGQ.cache
 firebase.json
 .firebaserc
+src/components/DataBox.js
