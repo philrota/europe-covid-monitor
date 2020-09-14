@@ -3,7 +3,6 @@ import { CircularProgress } from "@material-ui/core";
 
 class DataBox extends Component {
   state = {
-    country: this.props.country,
     confirmed: null,
     recovered: null,
     critical: null,
@@ -15,7 +14,7 @@ class DataBox extends Component {
     this.setState({ loading: true });
 
     fetch(
-      `https://covid-19-data.p.rapidapi.com/country?format=undefined&name=${this.state.country}`,
+      `https://covid-19-data.p.rapidapi.com/country?format=undefined&name=${this.props.country}`,
       {
         method: "GET",
         mode: "cors",
@@ -23,8 +22,8 @@ class DataBox extends Component {
         headers: {
           "x-rapidapi-host": "covid-19-data.p.rapidapi.com",
           "x-rapidapi-key":
-          "9b08cf8676msh77975a36d604f1fp1a0e5ajsn93480bea412f",
-          "Access-Control-Allow-Origin": "*"
+            "9b08cf8676msh77975a36d604f1fp1a0e5ajsn93480bea412f",
+          "Access-Control-Allow-Origin": "*",
         },
       }
     )
@@ -32,13 +31,12 @@ class DataBox extends Component {
         return response.json();
       })
       .then((data) => {
-        this.setState({ loading: false });
-        // get country, you can switch to confirmed or recovered etc..
         this.setState({
           confirmed: data[0].confirmed,
           recovered: data[0].recovered,
           critical: data[0].critical,
           deaths: data[0].deaths,
+          loading: false,
         });
       })
       .catch((err) => {

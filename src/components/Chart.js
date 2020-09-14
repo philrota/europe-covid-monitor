@@ -7,9 +7,9 @@ class Chart extends Component {
   state = {
     april: datas[0][0].totalCases,
     may: datas[0][1].totalCases,
-    june: null,
-    july: null,
-    august: null,
+    june: datas[0][2].totalCases,
+    july: datas[0][3].totalCases,
+    august: datas[0][4].totalCases,
     september: null,
     october: null,
     november: null,
@@ -25,16 +25,16 @@ render() {
       data: [
         {
           // Change type to "doughnut", "line", "splineArea", etc.
-          type: "splineArea",
+          type: "column",
           dataPoints: [
             {
               label: " April 2020",
               y: this.state.april,
             },
             { label: `May 2020`, y: this.state.may },
-            { label: `June 2020`, y: null },
-            { label: `July 2020`, y: null },
-            { label: `August 2020`, y: null },
+            { label: `June 2020`, y: this.state.june },
+            { label: `July 2020`, y: this.state.july },
+            { label: `August 2020`, y: this.state.august },
             { label: `September 2020`, y: null },
             { label: `October 2020`, y: null },
             { label: `November 2020`, y: null },

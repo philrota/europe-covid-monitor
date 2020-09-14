@@ -30,37 +30,43 @@ import slovakiaFlag from "./assets/slovakia.png";
 import sloveniaFlag from "./assets/slovenia.png";
 
 class App extends Component {
-  state = {};
+  state = {
+    countries: [
+      { country: "Austria", flag: austriaFlag },
+      { country: "Belgium", flag: belgiumFlag },
+      { country: "Bulgaria", flag: bulgariaFlag },
+      { country: "Croatia", flag: croatiaFlag },
+      { country: "Cyprus", flag: cyprusFlag },
+      { country: "Czechia", flag: czechFlag },
+      { country: "Denmark", flag: denmarkFlag },
+      { country: "Estonia", flag: estoniaFlag },
+      { country: "Finland", flag: finlandFlag },
+      { country: "France", flag: franceFlag },
+      { country: "Germany", flag: germanFlag },
+      { country: "Greece", flag: greeceFlag },
+      { country: "Hungary", flag: hungaryFlag },
+      { country: "Ireland", flag: irelandFlag },
+      { country: "Italy", flag: italyFlag },
+      { country: "Latvia", flag: latviaFlag },
+      { country: "Lithuania", flag: lithuaniaFlag },
+      { country: "Luxembourg", flag: luxembourgFlag },
+      { country: "Malta", flag: maltaFlag },
+      { country: "Netherlands", flag: NlFlag },
+      { country: "Poland", flag: polandFlag },
+      { country: "Portugal", flag: portugalFlag },
+      { country: "Romania", flag: romaniaFlag },
+      { country: "Slovakia", flag: slovakiaFlag },
+      { country: "Slovenia", flag: sloveniaFlag },
+      { country: "Spain", flag: spainFlag },
+      { country: "Sweden", flag: swedenFlag },
+    ],
+  };
   render() {
     return (
       <div className="grid-container">
-        <DataBox country="Austria" flag={austriaFlag} />
-        <DataBox country="Belgium" flag={belgiumFlag} />
-        <DataBox country="Bulgaria" flag={bulgariaFlag} />
-        <DataBox country="Croatia" flag={croatiaFlag} />
-        <DataBox country="Cyprus" flag={cyprusFlag} />
-        <DataBox country="Czechia" flag={czechFlag} />
-        <DataBox country="Denmark" flag={denmarkFlag} />
-        <DataBox country="Estonia" flag={estoniaFlag} />
-        <DataBox country="Finland" flag={finlandFlag} />
-        <DataBox country="France" flag={franceFlag} />
-        <DataBox country="Germany" flag={germanFlag} />
-        <DataBox country="Greece" flag={greeceFlag} />
-        <DataBox country="Hungary" flag={hungaryFlag} />
-        <DataBox country="Ireland" flag={irelandFlag} />
-        <DataBox country="Italy" flag={italyFlag} />
-        <DataBox country="Latvia" flag={latviaFlag} />
-        <DataBox country="Lithuania" flag={lithuaniaFlag} />
-        <DataBox country="Luxembourg" flag={luxembourgFlag} />
-        <DataBox country="Malta" flag={maltaFlag} />
-        <DataBox country="Netherlands" flag={NlFlag} />
-        <DataBox country="Poland" flag={polandFlag} />
-        <DataBox country="Portugal" flag={portugalFlag} />
-        <DataBox country="Romania" flag={romaniaFlag} />
-        <DataBox country="Slovakia" flag={slovakiaFlag} />
-        <DataBox country="Slovenia" flag={sloveniaFlag} />
-        <DataBox country="Spain" flag={spainFlag} />
-        <DataBox country="Sweden" flag={swedenFlag} />
+        {this.state.countries.map((el) => (
+          <DataBox country={el.country} flag={el.flag} />
+        ))}
       </div>
     );
   }

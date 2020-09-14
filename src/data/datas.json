@@ -9,6 +9,23 @@
       "totalCases":283506 ,
       "month": "May",
       "year": 2020
+    },
+    {
+      "totalCases":148104 ,
+      "month": "June",
+      "year": 2020
+
+    },
+    {
+      "totalCases":192612 ,
+      "month": "July",
+      "year": 2020
+    },
+    {
+      "totalCases":502424 ,
+      "month": "August",
+      "year": 2020
     }
+
   ]
 ]
